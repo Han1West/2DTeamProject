@@ -4958,5 +4958,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 9138685314197205782, guid: 2f9865438bac09f408706cd26b2b4b4c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f9865438bac09f408706cd26b2b4b4c, type: 3}
