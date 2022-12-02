@@ -7,6 +7,7 @@ public class DatabaseManager : MonoBehaviour
     static public DatabaseManager instance;
 
     private PlayerStat thePlayerStat;
+    private Inventory theInv;
 
     public GameObject prefabs_Floating_Text;
     public GameObject parent;
@@ -73,6 +74,7 @@ public class DatabaseManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        theInv = FindObjectOfType<Inventory>();
         thePlayerStat = FindObjectOfType<PlayerStat>();
         itemList.Add(new Item(40000, "낡은 노트", "무언가 적혀 있는 노트이다.", Item.ItemType.Quest));
         itemList.Add(new Item(40001, "붉은색 수첩", "무언가 적혀있는 수첩이다.", Item.ItemType.Quest));

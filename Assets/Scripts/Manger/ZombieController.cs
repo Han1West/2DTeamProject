@@ -5,7 +5,9 @@ using UnityEngine;
 public class ZombieController : MonoBehaviour
 {
     private PlayerStat thePlayerStat;
-    
+
+
+
     public int atk;
     public float attackDelay;
 
@@ -13,20 +15,24 @@ public class ZombieController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         thePlayerStat = FindObjectOfType<PlayerStat>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if(collision.gameObject.name == "Player")
         {
             thePlayerStat.Hit(atk);
         }
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
+
 }
