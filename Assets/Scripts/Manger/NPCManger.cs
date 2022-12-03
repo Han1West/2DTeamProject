@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class NPCMove
 {
+
     [Tooltip("NPCMove를 체크하면 NPC가 움직임")]
     public bool NPCmove;
 
@@ -14,6 +15,7 @@ public class NPCMove
 }
 public class NPCManger : MovingObject
 {
+ 
     [SerializeField]
     public NPCMove npc;
     // Start is called before the first frame update

@@ -76,11 +76,6 @@ public class DatabaseManager : MonoBehaviour
     {
         theInv = FindObjectOfType<Inventory>();
         thePlayerStat = FindObjectOfType<PlayerStat>();
-        itemList.Add(new Item(40000, "낡은 노트", "무언가 적혀 있는 노트이다.", Item.ItemType.Quest));
-        itemList.Add(new Item(40001, "붉은색 수첩", "무언가 적혀있는 수첩이다.", Item.ItemType.Quest));
-        itemList.Add(new Item(40002, "검은색 수첩", "무언가 적혀있는 수첩이다.", Item.ItemType.Quest));
-        itemList.Add(new Item(40003, "푸른색 수첩", "무언가 적혀있는 수첩이다.", Item.ItemType.Quest));
-        itemList.Add(new Item(40004, "신문", "어떠한 정보가 적혀있는 신문이다.", Item.ItemType.Quest));
         itemList.Add(new Item(10000, "묵직한 가방", "왠지 모르겠지만, 무거운 가방이다. 맞으면 꽤나 아플것 같다.", Item.ItemType.Equip));
         itemList.Add(new Item(10001, "장난감 검", "겉보기엔 영락없는 검이지만, 장난감에 불가하다.", Item.ItemType.Equip));
         itemList.Add(new Item(10002, "바인더", "모서리가 꽤나 날카로운 바인더이다.", Item.ItemType.Equip));
@@ -94,5 +89,15 @@ public class DatabaseManager : MonoBehaviour
         itemList.Add(new Item(30003, "열쇠", "어딘가에 쓰일 것 같은 열쇠이다.", Item.ItemType.Use));
         itemList.Add(new Item(30004, "플래시", "어두운 곳에서 사용할 수 있을 듯 하다.", Item.ItemType.Use));
         itemList.Add(new Item(30005, "자물쇠", "어딘가에 사용할 수 있을 것 같은 자물쇠이다.", Item.ItemType.Use));
+        itemList.Add(new Item(01, "쪽지1", "2", Item.ItemType.Quest));
+        itemList.Add(new Item(02, "쪽지2", "0", Item.ItemType.Quest));
+        itemList.Add(new Item(03, "쪽지3", "2", Item.ItemType.Quest));
+        itemList.Add(new Item(04, "쪽지4", "2", Item.ItemType.Quest));
+        itemList.Add(new Item(05, "쪽지5", "3", Item.ItemType.Quest));
+        itemList.Add(new Item(06, "쪽지6", "5", Item.ItemType.Quest));
+        itemList.Add(new Item(07, "쪽지7", "7", Item.ItemType.Quest));
+        itemList.Add(new Item(08, "쪽지8", "8", Item.ItemType.Quest));
+        itemList.Add(new Item(09, "쪽지9", "5", Item.ItemType.Quest));
+        itemList.Add(new Item(10, "쪽지10", "2", Item.ItemType.Quest));
     }
 }

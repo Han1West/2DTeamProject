@@ -28,6 +28,8 @@ public class PlayerStat : MonoBehaviour
 
         dmg = _enemyAtk;
 
+        currentHp = currentHp - dmg;
+
         if (currentHp <= 0)
             Debug.Log("게임 오버");
 

@@ -9,9 +9,17 @@ public class FadeManager : MonoBehaviour
     public SpriteRenderer black;
     private Color color;
 
+    public string flashSound;
+
+    private AudioManger theAudio;
+
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f); //계산의 과부하 방지
 
     // Start is called before the first frame update
+    void Start()
+    {
+        theAudio = FindObjectOfType<AudioManger>();
+    }
     public void FadeOut(float _speed = 0.02f)
     {
         StopAllCoroutines();
@@ -55,12 +63,14 @@ public class FadeManager : MonoBehaviour
     {
         StopAllCoroutines();
         StartCoroutine(FlashCoroutine(_speed));
+
     }
 
     IEnumerator FlashCoroutine(float _speed)
     {
         color = white.color;
 
+        theAudio.Play(flashSound);
         while (color.a < 1f)
         {
             color.a += _speed;

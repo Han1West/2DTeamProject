@@ -6,6 +6,22 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
+    public static Menu instance;
+    #region Singleton
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    #endregion Singleton
     private AudioManger theAudio;
     private OrderManager theOrder;
     private PlayerStat thePlayerStat;
@@ -43,7 +59,7 @@ public class Menu : MonoBehaviour
 
     public void StatShow()
     {
-        hp.text = thePlayerStat.hp.ToString() + "    /    " + thePlayerStat.currentHp.ToString();
+        hp.text = thePlayerStat.currentHp.ToString() + "    /    " + thePlayerStat.hp.ToString();
         atk.text = thePlayerStat.atk.ToString();
     }
 

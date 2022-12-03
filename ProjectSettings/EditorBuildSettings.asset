@@ -5,13 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/sample2.unity
     guid: fc24a959815572d4aa02c9a7474ce838
   - enabled: 1
     path: Assets/Scenes/DoorMove.unity
     guid: ccb85e287f976384aa1a41ccee154e7e
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 2cc53a7f60eecd24ea4d90a941e2b46e
+  - enabled: 1
+    path: Assets/Scenes/Playground.unity
+    guid: 749a9a53d00224241b8c1b8ccbdbcf3d
+  - enabled: 1
+    path: Assets/Scenes/changjo.unity
+    guid: f213150a9f1ed7147aa65ade4c369d2d
+  - enabled: 1
+    path: Assets/Scenes/lab.unity
+    guid: 3280c3e8054809142a162f13d191a7e6
   m_configObjects: {}

@@ -17,6 +17,7 @@ public class ZombieContro : MonoBehaviour
     [Range(0f, 3f)] float contactDistance = 1f;
 
     bool follow = false;
+    bool canMove = false;
 
     void Awake()
     {
@@ -45,9 +46,19 @@ public class ZombieContro : MonoBehaviour
 
     void FollowTarget()
     {
-        if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+        if (Vector2.Distance(transform.position, target.position) > contactDistance && follow && canMove)
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         else
             rb.velocity = Vector2.zero;
+    }
+
+    public void NotMove()
+    {
+        canMove = false;
+    }
+
+    public void CanMove()
+    {
+        canMove = true;
     }
 }

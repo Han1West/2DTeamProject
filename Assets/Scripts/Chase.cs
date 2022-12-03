@@ -5,17 +5,23 @@ using UnityEngine.AI;
 
 public class Chase : MonoBehaviour
 {
+
     [SerializeField]
     [Range(1f, 1000f)] float moveSpeed = 2f;
 
     Animator animator;
 
+    GroundFirst groundFirst;
+
     private protected Rigidbody2D rb;
     private protected Vector2 movement;
     public GameObject player;
 
+    public bool canMove = true;
+
     private void Start()
     {
+        groundFirst = FindObjectOfType<GroundFirst>();
         animator = GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody2D>();
         player = GameObject.Find(tag = "Player");
@@ -29,13 +35,25 @@ public class Chase : MonoBehaviour
             animator.SetBool("Right", true);
         direction.Normalize();
         movement = direction;
+       
     }
     private void FixedUpdate()
     {
-        MoveCharacter(movement);
+        if(groundFirst.mon)
+            MoveCharacter(movement);
     }
     private void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+    }
+
+    public void NotMove()
+    {
+        canMove = false;
+    }
+
+    public void CanMove()
+    {
+        canMove = true;
     }
 }
