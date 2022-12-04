@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6975564ad2a4dcf49a9b5eec4b4df984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: changjo
+  transferMapName: sample2
   dooropen: 
   anim_1: {fileID: 0}
   anim_2: {fileID: 0}
@@ -609,6 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fddb6ca936fe26438e9b784849ff6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boundName: Playground
 --- !u!61 &222909854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6990,8 +6991,9 @@ MonoBehaviour:
   dialogue_1:
     sentences:
     - "\uCABD\uC9C0\uB97C \uB2E4 \uBAA8\uC73C\uACE0 \uB098\uAC00\uC790!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5b936265776e6b24bbce1eafe2100a2d, type: 3}
 --- !u!61 &641113992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7026,12 +7028,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641113990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3644, y: 826, z: -88.339165}
+  m_LocalPosition: {x: 3644, y: 826, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &668408746
 GameObject:
@@ -7751,97 +7753,111 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD300\uC6D03: \uD5C9\u2026\uD5C9\u2026 \uC774\uBC88\uC5D4 \uC9C4\uC9DC \uC8FD\uB294\uC904
+    - "\uD5C9\u2026\uD5C9\u2026 \uC774\uBC88\uC5D4 \uC9C4\uC9DC \uC8FD\uB294\uC904
       \uC54C\uC558\uB124! \uB098 \uB354 \uC774\uC0C1\uC740 \uBABB\uD574\uBA39\uACA0\uC5B4
       \uC9C4\uC9DC!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_2:
     sentences:
-    - "\uD300\uC6D05: \uC5B4! \uB2E4\uB4E4 \uC5B4\uB514 \uACC4\uC168\uC5B4\uC694?"
+    - "\uC5B4! \uB2E4\uB4E4 \uC5B4\uB514 \uACC4\uC168\uC5B4\uC694?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 3811712e1bc3a3344b392cd68d2118ae, type: 3}
   dialogue_3:
     sentences:
-    - "\uD300\uC6D02: [\uD300\uC6D05]! \uBB34\uC0AC\uD588\uAD6C\uB098! \uAC83\uBCF4\uB2E8
-      \uC190\uC5D0 \uADF8\uAC74 \uBB50\uC57C?"
+    - "\uD604\uC9C0! \uBB34\uC0AC\uD588\uAD6C\uB098! \uAC83\uBCF4\uB2E8 \uC190\uC5D0
+      \uADF8\uAC74 \uBB50\uC57C?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: e692b817db57f4948982dfbfb039fa04, type: 3}
   dialogue_4:
     sentences:
-    - "\uD300\uC6D05: \uC800\uB3C4 \uC798 \uBAA8\uB974\uACA0\uC5B4\uC694. \uC5EC\uAE30\uC5D0
-      \uB5A8\uC5B4\uC838 \uC788\uC5B4\uC11C..  \uCABD\uC9C0 \uAC19\uC740\uB370."
+    - "\uC800\uB3C4 \uC798 \uBAA8\uB974\uACA0\uC5B4\uC694. \uC5EC\uAE30\uC5D0 \uB5A8\uC5B4\uC838
+      \uC788\uC5B4\uC11C..  \uCABD\uC9C0 \uAC19\uC740\uB370."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 3811712e1bc3a3344b392cd68d2118ae, type: 3}
   dialogue_5:
     sentences:
-    - "\uC8FC\uC778\uACF5: \uCABD\uC9C0? \uD639\uC2DC \uBB50\uB77C\uACE0 \uC801\uD600\uC788\uB098\uC694?"
+    - "\uCABD\uC9C0? \uD639\uC2DC \uBB50\uB77C\uACE0 \uC801\uD600\uC788\uB098\uC694?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 68716520f44befd4685ef892ce0bf928, type: 3}
   dialogue_6:
     sentences:
-    - "\uD300\uC6D05 : \uC5B4 \uC7A0\uC2DC\uB9CC\uC694.. ' \uB098\uB294 \uBC94\uC778\uC744
-      \uC54C\uACE0\uC788\uB2E4.' \uB77C\uACE0 \uC801\uD600\uC788\uB294\uB370\uC694?"
+    - "\uC5B4 \uC7A0\uC2DC\uB9CC\uC694.. ' \uB098\uB294 \uBC94\uC778\uC744 \uC54C\uACE0\uC788\uB2E4.'
+      \uB77C\uACE0 \uC801\uD600\uC788\uB294\uB370\uC694?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 3811712e1bc3a3344b392cd68d2118ae, type: 3}
   dialogue_7:
     sentences:
-    - "\uD300\uC6D05: \uBC94\uC778\uC774\uB77C\uB2C8.. \uC774\uAC8C \uBB34\uC2A8
-      \uC18C\uB9AC\uC8E0?"
+    - "\uBC94\uC778\uC774\uB77C\uB2C8.. \uC774\uAC8C \uBB34\uC2A8 \uC18C\uB9AC\uC8E0?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 3811712e1bc3a3344b392cd68d2118ae, type: 3}
   dialogue_8:
     sentences:
-    - "\uD300\uC6D02: \uC6B0\uB9B0 \uB2E4\uB978 \uC138\uACC4\uC5D0 \uBE68\uB824\uC628\uAC70\uAC19\uC544\u2026([\uD300\uC6D01]\uC758
+    - "\uC6B0\uB9B0 \uB2E4\uB978 \uC138\uACC4\uC5D0 \uBE68\uB824\uC628\uAC70\uAC19\uC544\u2026(\uC9C4\uC6B0\uC758
       \uC18C\uC2DD\uACFC \uB2E8\uC11C 1\uC744 \uC54C\uB824\uC900\uB2E4)"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: e692b817db57f4948982dfbfb039fa04, type: 3}
   dialogue_9:
     sentences:
-    - "\uD300\uC6D05: \uC774\uB7F4\uC218\uAC00\u2026 \uADF8\uB7FC \uC774 \uBC94\uC778\uC740
-      \uC6B0\uB9B4 \uC5EC\uAE30\uB85C \uAC00\uB454 \uC0AC\uB78C\uC774\uACA0\uB124\uC694!"
+    - "\uC774\uB7F4\uC218\uAC00\u2026 \uADF8\uB7FC \uC774 \uBC94\uC778\uC740 \uC6B0\uB9B4
+      \uC5EC\uAE30\uB85C \uAC00\uB454 \uC0AC\uB78C\uC774\uACA0\uB124\uC694!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 3811712e1bc3a3344b392cd68d2118ae, type: 3}
   dialogue_10:
     sentences:
-    - "\uD300\uC6D04: \uC800\uAE30. \uC6B4\uB3D9\uC7A5\uC5D0\uB3C4 \uBB54\uAC00 \uC788\uB294\uAC70
+    - "\uC800\uAE30. \uC6B4\uB3D9\uC7A5\uC5D0\uB3C4 \uBB54\uAC00 \uC788\uB294\uAC70
       \uAC19\uC740\uB370?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: ebf8407d3ebaa55438764e8a5bb117e4, type: 3}
   dialogue_11:
     sentences:
-    - "\uC8FC\uC778\uACF5 : \uC5C7 \uC815\uB9D0\uC694! \uC800\uAC83 \uCABD\uC9C0
-      \uAC19\uC740\uB370\uC694?"
+    - "\uC5C7 \uC815\uB9D0\uC694! \uC800\uAC83 \uCABD\uC9C0 \uAC19\uC740\uB370\uC694?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_12:
     sentences:
     - "\uADF8\uB974\uB974\uB974\uB974.."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5b936265776e6b24bbce1eafe2100a2d, type: 3}
   dialogue_13:
     sentences:
-    - "\uD300\uC6D03 : \uC790..\uC7A0\uB9CC! \uC774\uC18C\uB9B0.. \uC544 \uC544\uAE4C
-      \uADF8 \uC880\uBE44\uAC19\uC740 \uB140\uC11D\uB4E4\uC774\uC796\uC544!"
+    - "\uC790..\uC7A0\uB9CC! \uC774\uC18C\uB9B0.. \uC544 \uC544\uAE4C \uADF8 \uC880\uBE44\uAC19\uC740
+      \uB140\uC11D\uB4E4\uC774\uC796\uC544!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_14:
     sentences:
-    - "\uD300\uC6D03: \uC11C..\uC124\uB9C8 \uC800 \uB140\uC11D\uB4E4 \uC0AC\uC774\uB85C
-      \uAC08 \uC0DD\uAC01\uC740 \uC544\uB2C8\uC9C0?"
+    - "\uC11C..\uC124\uB9C8 \uC800 \uB140\uC11D\uB4E4 \uC0AC\uC774\uB85C \uAC08 \uC0DD\uAC01\uC740
+      \uC544\uB2C8\uC9C0?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_15:
     sentences:
-    - "\uC8FC\uC778\uACF5: \uBC29\uBC95\uC774 \uC5C6\uC796\uC544\uC694! \uAC00\uC694!"
+    - "\uBC29\uBC95\uC774 \uC5C6\uC796\uC544\uC694! \uAC00\uC694!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 68716520f44befd4685ef892ce0bf928, type: 3}
   dialogue_16:
     sentences:
     - "\uBAAC\uC2A4\uD130\uB4E4\uC744 \uD53C\uD574 \uCD1D 10\uC7A5\uC758 \uCABD\uC9C0\uB97C
       \uAD6C\uD558\uC790!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5b936265776e6b24bbce1eafe2100a2d, type: 3}
   go: {fileID: 2102001562}
   npc2: {fileID: 867181540}
   npc3: {fileID: 245577362}
@@ -8177,6 +8193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108543843}
   - component: {fileID: 1108543842}
+  - component: {fileID: 1108543844}
   m_Layer: 0
   m_Name: FlagDia
   m_TagString: Untagged
@@ -8218,13 +8235,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108543841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3597, y: 748, z: 2.6410904}
+  m_LocalPosition: {x: 3597, y: 748, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108543844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108543841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470cbc9f07b0c68438f6de1debb073c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - "\uCABD\uC9C0\uB97C \uB2E4 \uBAA8\uC73C\uACE0 \uB098\uAC00\uC790!"
+    sentences2: []
+    dialougueWindows:
+    - {fileID: 21300000, guid: 5b936265776e6b24bbce1eafe2100a2d, type: 3}
 --- !u!1001 &1137499442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8302,74 +8337,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2495c268e380e4a91cb7187ad87699, type: 3}
---- !u!1 &1148723654
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1148723657}
-  - component: {fileID: 1148723656}
-  - component: {fileID: 1148723655}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1148723655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148723654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1148723656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148723654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1148723657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148723654}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1190540240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20008,7 +19975,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3301887, g: 0.29125136, b: 0.29125136, a: 1}
   m_Origin: {x: -18, y: -17, z: 0}
   m_Size: {x: 45, y: 25, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}

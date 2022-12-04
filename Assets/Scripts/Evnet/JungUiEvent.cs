@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class JungUiEvent : MonoBehaviour
 {
@@ -20,6 +19,7 @@ public class JungUiEvent : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private PlayerManager thePlayer;
+    private Menu theMenu;
 
     public GameObject npc11;
 
@@ -29,6 +29,7 @@ public class JungUiEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        theMenu = FindObjectOfType<Menu>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerManager>();
@@ -104,6 +105,6 @@ public class JungUiEvent : MonoBehaviour
 
 
         theOrder.Move(); //이벤트 종료시 이동가능
-        //SceneManager.LoadScene("Start");
+        theMenu.ToTitle();
     }
 }

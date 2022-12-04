@@ -179,6 +179,7 @@ public class NumberSystem : MonoBehaviour
     IEnumerator ExitCoroutine()
     {
         Debug.Log("우리가 낸 답 = " + result + "정답 = " + correctNumber);
+        Debug.Log(correctFlag);
         result = 0;
         tempNumber = "";
         anim.SetBool("Appear", false);

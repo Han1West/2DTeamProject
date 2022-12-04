@@ -8,9 +8,11 @@ public class DatabaseManager : MonoBehaviour
 
     private PlayerStat thePlayerStat;
     private Inventory theInv;
+    private Truth truth;
 
     public GameObject prefabs_Floating_Text;
     public GameObject parent;
+
 
     #region Singleton
     private void Awake()
@@ -55,6 +57,9 @@ public class DatabaseManager : MonoBehaviour
                     thePlayerStat.currentHp = thePlayerStat.hp;
                 FloatText(10);
                 break;
+            case 00:
+                switches[1] = true;
+                break;
         }
     }
 
@@ -74,6 +79,7 @@ public class DatabaseManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        truth = FindObjectOfType<Truth>();
         theInv = FindObjectOfType<Inventory>();
         thePlayerStat = FindObjectOfType<PlayerStat>();
         itemList.Add(new Item(10000, "묵직한 가방", "왠지 모르겠지만, 무거운 가방이다. 맞으면 꽤나 아플것 같다.", Item.ItemType.Equip,2));
@@ -99,5 +105,7 @@ public class DatabaseManager : MonoBehaviour
         itemList.Add(new Item(08, "쪽지8", "8", Item.ItemType.Quest));
         itemList.Add(new Item(09, "쪽지9", "5", Item.ItemType.Quest));
         itemList.Add(new Item(10, "쪽지10", "2", Item.ItemType.Quest));
+        itemList.Add(new Item(20, "비밀 쪽지", "내컴퓨터, 20180", Item.ItemType.Quest));
+        itemList.Add(new Item(00, "연구 일지", "미래를 위한 가상 현실세계", Item.ItemType.Use));
     }
 }

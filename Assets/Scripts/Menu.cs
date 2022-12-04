@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -26,10 +27,11 @@ public class Menu : MonoBehaviour
     private OrderManager theOrder;
     private PlayerStat thePlayerStat;
 
-    private float timeCount = 0;
 
     public string callSound;
     public string cancelSound;
+
+    public GameObject[] gos;
 
     public TMP_Text hp;
     public TMP_Text atk;
@@ -63,10 +65,18 @@ public class Menu : MonoBehaviour
         atk.text = thePlayerStat.atk.ToString();
     }
 
+    public void ToTitle()
+    {
+        for (int i = 0; i < gos.Length;  i++)
+            Destroy(gos[i]);
+        go.SetActive(false);
+        activated = false;
+        SceneManager.LoadScene("Title");
+    }
+
     void Update()
     {
         StatShow();
-        timeCount += Time.deltaTime;
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             activated = !activated;

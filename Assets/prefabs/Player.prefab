@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 686160535099985536}
   - component: {fileID: 686160535099985537}
   - component: {fileID: 686160535099985542}
+  - component: {fileID: -8012768195418792190}
+  - component: {fileID: 4550393190845668673}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -200,6 +202,7 @@ MonoBehaviour:
   hp: 20
   currentHp: 20
   atk: 2
+  added_atk: 0
   dmgSound: dmgSound
   prefabs_Floating_text: {fileID: 5814858055620838169, guid: 597968f4ced68c344ad5a1ffe12d6fc0, type: 3}
   parent: {fileID: 0}
@@ -219,3 +222,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.8422691
+--- !u!114 &-8012768195418792190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686160535099985545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7ea7d45b2b11a47acdb593d091baaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4550393190845668673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686160535099985545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760ee05e46849a249a7744e801f3a75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

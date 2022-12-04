@@ -8,7 +8,10 @@ public class GameManager : MonoBehaviour
     private Bound[] bounds;
     private PlayerManager thePlayer;
     private CameraManager theCamera;
-
+    private FadeManager theFade;
+    private Menu theMenu;
+    private DialogueManager theDM;
+    private Camera cam;
 
     public void LoadStart()
     {
@@ -19,11 +22,21 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
+        theDM = FindObjectOfType<DialogueManager>();
+        theMenu = FindObjectOfType<Menu>();
+        cam = FindObjectOfType<Camera>();
         thePlayer = FindObjectOfType<PlayerManager>();
         bounds = FindObjectsOfType<Bound>();
         theCamera = FindObjectOfType<CameraManager>();
+        theFade = FindObjectOfType<FadeManager>();
+
+        Color color = thePlayer.GetComponent<SpriteRenderer>().color;
+        color.a = 1f;
+        thePlayer.GetComponent<SpriteRenderer>().color = color;
 
         theCamera.target = GameObject.Find("Player");
+        theMenu.GetComponent<Canvas>().worldCamera = cam;
+        theDM.GetComponent<Canvas>().worldCamera = cam;
 
         for (int i = 0; i < bounds.Length; i++)
         {
@@ -33,6 +46,8 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+
+        theFade.FadeIn();
     }
 
 }

@@ -7,6 +7,7 @@ public class FadeManager : MonoBehaviour
 
     public SpriteRenderer white;
     public SpriteRenderer black;
+    public SpriteRenderer over;
     private Color color;
 
     public string flashSound;
@@ -43,6 +44,25 @@ public class FadeManager : MonoBehaviour
     {
         StopAllCoroutines();
         StartCoroutine(FadeInCoroutine(_speed));
+    }
+
+    public void GameOver(float _speed = 0.02f)
+    {
+        StopAllCoroutines();
+        StartCoroutine(GameOverCoroutine(_speed));
+    }
+
+    IEnumerator GameOverCoroutine(float _speed)
+    {
+
+        color = over.color;
+
+        while (color.a < 1f)
+        {
+            color.a += _speed;
+            over.color = color;
+            yield return waitTime;
+        }
     }
 
     IEnumerator FadeInCoroutine(float _speed)

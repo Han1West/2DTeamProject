@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     #endregion Singleton
     public TMP_Text text;
+    public TMP_Text text2;
     public SpriteRenderer rendererDialogueWindow;
 
     private List<string> listName;
@@ -46,6 +47,7 @@ public class DialogueManager : MonoBehaviour
     {
         count = 0;
         text.text = "";
+        text2.text = "";
         listName = new List<string>();
         listSentences = new List<string>();
         listDialogueWindows = new List<Sprite>();
@@ -80,9 +82,24 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(StartDialogueCoroutine());
     }
 
+    public void ShowDialogue2(Dialogue dialogue)
+    {
+        talking = true;
+        onlytext = false;
+
+        for (int i = 0; i < dialogue.sentences2.Length; i++)
+        {
+            listSentences.Add(dialogue.sentences2[i]);
+            listDialogueWindows.Add(dialogue.dialougueWindows[i]);
+        }
+
+        animDialogueWindow.SetBool("Appear", true);
+        StartCoroutine(StartDialogueCoroutine2());
+    }
     public void ExitDialogue()
     {
         text.text = "";
+        text2.text = "";
         count = 0;
         listName.Clear();
         listSentences.Clear();
@@ -139,6 +156,40 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    IEnumerator StartDialogueCoroutine2()
+    {
+        if (count > 0)
+        {
+            if (listDialogueWindows[count] != listDialogueWindows[count - 1])
+            {
+                animDialogueWindow.SetBool("Apeear", false);
+                yield return new WaitForSeconds(0.2f);
+                rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
+                animDialogueWindow.SetBool("Appear", true);
+            }
+            else
+            {
+                yield return new WaitForSeconds(0.05f);
+            }
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.05f);
+            rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
+        }
+        keyActivated = true;
+        for (int i = 0; i < listSentences[count].Length; i++)
+        {
+            text2.text += listSentences[count][i]; //1번째 문장의 1번째글자부터 하나씩 출력
+            if (i % 7 == 1)
+            {
+                theAudio.Play(keySound);
+            }
+            yield return new WaitForSeconds(0.01f);
+        }
+
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -150,6 +201,7 @@ public class DialogueManager : MonoBehaviour
                 keyActivated = false;
                 count++;
                 text.text = "";
+                text2.text = "";
                 theAudio.Play(enterSound);
 
                 if (count == listSentences.Count)

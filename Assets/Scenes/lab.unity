@@ -3666,89 +3666,110 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "???: \uC654\uAD6C\uB098."
+    - "\uC654\uAD6C\uB098."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5b936265776e6b24bbce1eafe2100a2d, type: 3}
   dialogue_2:
     sentences:
-    - "\uD300\uC6D03: \uB204\uAD6C..?"
+    - "\uB204\uAD6C..?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_3:
     sentences:
-    - "\uAD50\uC218\uB2D8: \uC5EC\uAE30 \uAE4C\uC9C0 \uC624\uB2E4\uB2C8. \uB300\uB2E8\uD55C
-      \uD45C\uBCF8\uB4E4\uC774\uAD70."
+    - "\uC5EC\uAE30 \uAE4C\uC9C0 \uC624\uB2E4\uB2C8. \uB300\uB2E8\uD55C \uD45C\uBCF8\uB4E4\uC774\uAD70."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5acc6a4d906c10d498c05bb71abd9b28, type: 3}
   dialogue_4:
     sentences:
-    - "\uD300\uC6D04: \uAD50\uC218\uB2D8!"
+    - "\uAD50\uC218\uB2D8!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: ebf8407d3ebaa55438764e8a5bb117e4, type: 3}
   dialogue_5:
     sentences:
-    - "\uD300\uC6D03: \uC5B4 \uAD50\uC218\uB2D8! \uC5EC\uD0DC\uAE4C\uC9C0 \uC5B4\uB514
-      \uACC4\uC168\uC5B4\uC694? \uC544\uB2C8 \uAC83\uBCF4\uB2E4 [\uD300\uC6D02]\uD615\uC774.."
+    - "\uC5B4 \uAD50\uC218\uB2D8! \uC5EC\uD0DC\uAE4C\uC9C0 \uC5B4\uB514 \uACC4\uC168\uC5B4\uC694?
+      \uC544\uB2C8 \uAC83\uBCF4\uB2E4 \uC6A9\uD615\uC774.."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_6:
     sentences:
-    - "\uD300\uC6D04: \uC57C \uC774 \uBA4D\uCCAD\uC544."
+    - "\uC57C \uC774 \uBA4D\uCCAD\uC544."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: ebf8407d3ebaa55438764e8a5bb117e4, type: 3}
   dialogue_7:
     sentences:
-    - "\uD300\uC6D03: ?"
+    - '?'
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_8:
     sentences:
-    - "\uC8FC\uC778\uACF5: \uAD50\uC218\uB2D8.. \uAD50\uC218\uB2D8\uC774\uC8E0? \uC774\uB7F0
-      \uC77C\uC744 \uBC8C\uC778 \uC0AC\uB78C."
+    - "\uAD50\uC218\uB2D8.. \uAD50\uC218\uB2D8\uC774\uC8E0? \uC774\uB7F0 \uC77C\uC744
+      \uBC8C\uC778 \uC0AC\uB78C."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 68716520f44befd4685ef892ce0bf928, type: 3}
   dialogue_9:
     sentences:
-    - "\uAD50\uC218\uB2D8: \uADF8\uB798. \uAC83\uBCF4\uB2E4 \uB108\uD770 \uC815\uB9D0
-      \uC798\uD574\uC8FC\uC5C8\uC5B4. \uC774\uB807\uAC8C\uAE4C\uC9C0 \uC624\uB798
-      \uC0B4\uC544\uB0A8\uC740 \uD45C\uBCF8\uB4E4\uC740 \uB108\uD76C\uAC00 \uCC98\uC74C\uC774\uC57C. "
+    - "\uADF8\uB798. \uAC83\uBCF4\uB2E4 \uB108\uD770 \uC815\uB9D0 \uC798\uD574\uC8FC\uC5C8\uC5B4.
+      \uC774\uB807\uAC8C\uAE4C\uC9C0 \uC624\uB798 \uC0B4\uC544\uB0A8\uC740 \uD45C\uBCF8\uB4E4\uC740
+      \uB108\uD76C\uAC00 \uCC98\uC74C\uC774\uC57C. "
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5acc6a4d906c10d498c05bb71abd9b28, type: 3}
   dialogue_10:
     sentences:
     - "\uACE0\uB9D9\uB2E4\uB294 \uB9D0 \uC804\uD558\uACE0 \uC2F6\uB124. \uC5F0\uAD6C\uC5D0
       \uC815\uB9D0 \uB9CE\uC740 \uB3C4\uC6C0\uC774 \uB418\uC5C8\uC5B4."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5acc6a4d906c10d498c05bb71abd9b28, type: 3}
   dialogue_11:
     sentences:
-    - "\uD300\uC6D05: \uAD50..\uAD50\uC218\uB2D8?"
+    - "\uAD50..\uAD50\uC218\uB2D8?"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 3811712e1bc3a3344b392cd68d2118ae, type: 3}
   dialogue_12:
     sentences:
-    - "\uAD50\uC218\uB2D8: \uADF8\uB7F0\uB370 \uB9D0\uC774\uC9C0."
+    - "\uADF8\uB7F0\uB370 \uB9D0\uC774\uC9C0."
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5acc6a4d906c10d498c05bb71abd9b28, type: 3}
   dialogue_13:
     sentences:
-    - "\uC8FC\uC778\uACF5: \uC870\uC2EC\uD574\uC694!"
+    - "\uC870\uC2EC\uD574\uC694!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 68716520f44befd4685ef892ce0bf928, type: 3}
   dialogue_14:
     sentences:
-    - "\uD300\uC6D03: \uBC14..\uBC29\uAE08 \uBB54\uAC00\uAC00!"
+    - "\uBC14..\uBC29\uAE08 \uBB54\uAC00\uAC00!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_15:
     sentences:
-    - "\uAD50\uC218\uB2D8: \uC9C4\uC2E4\uC5D0 \uAC70\uC758 \uC811\uADFC\uD55C \uC774\uC0C1,
-      \uC0B4\uC544 \uB3CC\uC544\uAC00\uAE34 \uD798\uB4E4 \uAC70\uC57C!"
+    - "\uC9C4\uC2E4\uC5D0 \uAC70\uC758 \uC811\uADFC\uD55C \uC774\uC0C1, \uC0B4\uC544
+      \uB3CC\uC544\uAC00\uAE34 \uD798\uB4E4 \uAC70\uC57C!"
+    sentences2: []
     dialougueWindows:
-    - {fileID: 21300000, guid: 21d8c534820adcc43904080a1027f6ed, type: 3}
+    - {fileID: 21300000, guid: 5acc6a4d906c10d498c05bb71abd9b28, type: 3}
+  dialogue_16:
+    sentences:
+    - "\uC5E5? \uADF8\uAC8C \uBB54.."
+    sentences2: []
+    dialougueWindows:
+    - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   npc3: {fileID: 1341455995}
   npc4: {fileID: 1838268347}
   npc5: {fileID: 1005386024}
+  nextTranfer: {fileID: 2095201025}
 --- !u!1 &2042351367
 GameObject:
   m_ObjectHideFlags: 0
@@ -8771,6 +8792,92 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1001 &2095201024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 406
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 325
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339450, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339451, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: transferMapName
+      value: AfterLab
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339452, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6891669
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339452, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9803642
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339452, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.34458345
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339452, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4901821
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339453, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_Name
+      value: TransferPoint (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423388884021339453, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+--- !u!1 &2095201025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3423388884021339453, guid: 008b08563360c9547abb70ae7914bb3c, type: 3}
+  m_PrefabInstance: {fileID: 2095201024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2105403430
 GameObject:
   m_ObjectHideFlags: 0
@@ -8827,6 +8934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fddb6ca936fe26438e9b784849ff6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boundName: lab
 --- !u!4 &2105403433
 Transform:
   m_ObjectHideFlags: 0

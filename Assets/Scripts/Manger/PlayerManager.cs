@@ -135,9 +135,9 @@ public class PlayerManager : MovingObject
         {
             theSaveNLoad.CallSave();
         }
-        if(Input.GetKeyDown(KeyCode.F5))
+        if(Input.GetKeyDown(KeyCode.F9))
         {
-
+            theSaveNLoad.CallLoad();
         }
         if (canMove && !notMove)
         {

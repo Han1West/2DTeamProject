@@ -21,21 +21,25 @@ public class LabEvent : MonoBehaviour
     public Dialogue dialogue_13;
     public Dialogue dialogue_14;
     public Dialogue dialogue_15;
+    public Dialogue dialogue_16;
 
     private FadeManager theFade;
     private DialogueManager theDM;
     private OrderManager theOrder;
     private PlayerManager thePlayer;
+    private TransferMap theTranfer;
 
     public GameObject npc3;
     public GameObject npc4;
     public GameObject npc5;
+    public GameObject nextTranfer;
 
     private bool flag;
 
     // Start is called before the first frame update
     void Start()
     {
+        theTranfer = FindObjectOfType<TransferMap>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerManager>();
@@ -105,6 +109,9 @@ public class LabEvent : MonoBehaviour
         theDM.ShowDialogue(dialogue_8);
         yield return new WaitUntil(() => !theDM.talking);
 
+        theDM.ShowDialogue(dialogue_16);
+        yield return new WaitUntil(() => !theDM.talking);
+
         theDM.ShowDialogue(dialogue_9);
         yield return new WaitUntil(() => !theDM.talking);
 
@@ -134,7 +141,10 @@ public class LabEvent : MonoBehaviour
         npc4.SetActive(false);
         npc5.SetActive(false);
 
+
         theOrder.Move(); //이벤트 종료시 이동가능
-        SceneManager.LoadScene("Start");
+        yield return new WaitForSeconds(0.5f);
+
+        nextTranfer.SetActive(true);
     }
 }

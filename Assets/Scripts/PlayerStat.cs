@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStat : MonoBehaviour
 {
@@ -15,12 +16,17 @@ public class PlayerStat : MonoBehaviour
 
     public string dmgSound;
 
+    private FadeManager theFade;
+    private Menu theMenu;
+
     public GameObject prefabs_Floating_text;
     public GameObject parent;
 
     // Start is called before the first frame update
     void Start()
     {
+        theMenu = FindObjectOfType<Menu>();
+        theFade = FindObjectOfType<FadeManager>();
         instance = this;
     }
 
@@ -33,7 +39,11 @@ public class PlayerStat : MonoBehaviour
         currentHp = currentHp - dmg;
 
         if (currentHp <= 0)
+        {
+            SceneManager.LoadScene("Title");
+            StartCoroutine(GameOverCoroutine());
             Debug.Log("게임 오버");
+        }
 
         AudioManger.instance.Play(dmgSound);
 
@@ -69,6 +79,16 @@ public class PlayerStat : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         color.a = 1f;
         GetComponent<SpriteRenderer>().color = color;
+    }
+
+    IEnumerator GameOverCoroutine()
+    {
+        theFade.GameOver();
+
+        yield return new WaitForSeconds(2f);
+
+        theMenu.ToTitle();
+
     }
     // Update is called once per frame
     void Update()

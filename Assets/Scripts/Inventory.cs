@@ -96,12 +96,12 @@ public class Inventory : MonoBehaviour
                         }
                         else
                         {
-                            inventoryItemList.Add(theDatabase.itemList[i]);
+                            inventoryItemList.Add(theDatabase.itemList[i]);                       
                         }
                         return;
                     }
                 inventoryItemList.Add(theDatabase.itemList[i]); //없는 경우
-                inventoryItemList[inventoryItemList.Count - 1].itemCount = _count;
+                inventoryItemList[inventoryItemList.Count-1].itemCount = _count;
                 return;
             }
         }
@@ -446,32 +446,35 @@ public class Inventory : MonoBehaviour
             {
                 if(inventoryItemList[i].itemID == inventoryTabList[selectedItem].itemID)
                 {
-                    if(inventoryTabList[i].itemType == Item.ItemType.Use)
-                    {
-                        if (thePlayerStat.hp == thePlayerStat.currentHp)
-                        {
-                            theAudio.Play(beepSound);
-                            break;
-                        }
-                        else
-                        {
-                            theDatabase.UseItem(inventoryItemList[i].itemID);
+                    //if(inventoryTabList[i].itemType == Item.ItemType.Use)
+                    //{
+                        //if(inventoryItemList[i].itemID == 00)
+                        //{
+                        //    theDatabase.UseItem(inventoryItemList[i].itemID);
+                        //    break;
+                        //}
+                        //if (thePlayerStat.hp == thePlayerStat.currentHp)
+                        //{
+                        //    theAudio.Play(beepSound);
+                        //    break;
+                        //}                      
+                    theDatabase.UseItem(inventoryItemList[i].itemID);
 
-                            if (inventoryItemList[i].itemCount > 1)
-                                inventoryItemList[i].itemCount--;
-                            else
-                                inventoryItemList.RemoveAt(i);
-                        }
-                    }
+                    if (inventoryItemList[i].itemCount > 1)
+                        inventoryItemList[i].itemCount--;
                     else
-                    {
-                        theDatabase.UseItem(inventoryItemList[i].itemID);
+                        inventoryItemList.RemoveAt(i);
+                       
+                    //}
+                    //else
+                    //{
+                    //    theDatabase.UseItem(inventoryItemList[i].itemID);
 
-                        if (inventoryItemList[i].itemCount > 1)
-                            inventoryItemList[i].itemCount--;
-                        else
-                            inventoryItemList.RemoveAt(i);
-                    }
+                    //    if (inventoryItemList[i].itemCount > 1)
+                    //        inventoryItemList[i].itemCount--;
+                    //    else
+                    //        inventoryItemList.RemoveAt(i);
+                    //}
 
                     theAudio.Play(useSound);
                     ShowItem();

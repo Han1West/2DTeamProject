@@ -28,7 +28,7 @@ public class ChoiceTet : MonoBehaviour
         switch (_result)
         {
             case 0:
-                StartCoroutine(theTranfer.TranferCoroutine("chanjo"));
+                StartCoroutine(theTranfer.TranferCoroutine("changjo"));
                 break;
             case 1:
                 StartCoroutine(theTranfer.TranferCoroutine("Mirae"));

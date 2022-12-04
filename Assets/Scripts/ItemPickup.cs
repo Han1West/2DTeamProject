@@ -21,12 +21,15 @@ public class ItemPickup : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        AudioManger.instance.Play(pickUpSound);
-        Inventory.instance.GetAnItem(itemID, _count);
-        theQuest.count += 1;
-        Destroy(this.gameObject);        
+        if(collision.gameObject.name == "Player")
+        {
+            AudioManger.instance.Play(pickUpSound);
+            Inventory.instance.GetAnItem(itemID, _count);
+            theQuest.count += 1;
+            Destroy(this.gameObject);
+        }     
     }
 
 }
