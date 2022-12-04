@@ -47,6 +47,9 @@ public class LabEvent : MonoBehaviour
     {
         if (!flag & Input.GetKey(KeyCode.RightArrow))
         {
+            npc3.SetActive(true);
+            npc4.SetActive(true);
+            npc5.SetActive(true);
             flag = true;
             StartCoroutine(FirstEventCoroutine());
         }
@@ -55,11 +58,6 @@ public class LabEvent : MonoBehaviour
     IEnumerator FirstEventCoroutine()
     {
         theOrder.PreLoadCharacter();
-
-    
-        npc3.SetActive(true);
-        npc4.SetActive(true);
-        npc5.SetActive(true);
         theOrder.NotMove(); //이벤트 시작시 이동불가
 
 
@@ -98,10 +96,11 @@ public class LabEvent : MonoBehaviour
         theOrder.Move("Player", "RIGHT");
         theOrder.Move("Player", "RIGHT");
         theOrder.Move("Player", "RIGHT");
+       
+        theOrder.Move("Player", "UP");
+        theOrder.Move("Player", "UP");
         theOrder.Move("Player", "RIGHT");
-        theOrder.Move("Player", "UP");
-        theOrder.Move("Player", "UP");
-        theOrder.Turn("Player", "RIGHT");
+        yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
         theDM.ShowDialogue(dialogue_8);
         yield return new WaitUntil(() => !theDM.talking);
@@ -120,10 +119,11 @@ public class LabEvent : MonoBehaviour
 
         theDM.ShowDialogue(dialogue_13);
         yield return new WaitUntil(() => !theDM.talking);
+        theFade.Flash();
 
         theDM.ShowDialogue(dialogue_14);
         yield return new WaitUntil(() => !theDM.talking);
-        theFade.Flash();
+ 
 
         theDM.ShowDialogue(dialogue_15);
         yield return new WaitUntil(() => !theDM.talking);

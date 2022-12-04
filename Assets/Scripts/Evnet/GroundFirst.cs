@@ -35,6 +35,7 @@ public class GroundFirst : MonoBehaviour
     public GameObject npc5;
 
 
+    private WaitForSeconds waitTime = new WaitForSeconds(0.1f);
 
     private bool flag;
     public bool mon;
@@ -64,16 +65,17 @@ public class GroundFirst : MonoBehaviour
     {
         theOrder.PreLoadCharacter();
 
-        npc2.SetActive(true);
-        npc3.SetActive(true);
-        npc4.SetActive(true);
         theOrder.NotMove(); //이벤트 시작시 이동불가
         mon = false;
-        theZombie.NotMove();
+        
+
+
 
         theOrder.Turn("NPC2", "RIGHT");
         theOrder.Turn("NPC3", "RIGHT");
         theOrder.Turn("NPC4", "RIGHT");
+
+        yield return waitTime;
 
 
         theDM.ShowDialogue(dialogue_1);
@@ -86,6 +88,7 @@ public class GroundFirst : MonoBehaviour
         yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
         theOrder.Turn("NPC5", "LEFT");
+        yield return waitTime;
 
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(() => !theDM.talking);

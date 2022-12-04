@@ -33,7 +33,10 @@ public class ChangjoFirst: MonoBehaviour
     {
         if (!flag )
         {
-            flag = true;            
+            flag = true;
+            npc3.SetActive(true);
+            npc4.SetActive(true);
+            npc5.SetActive(true);
             StartCoroutine(FirstEventCoroutine());
         }
     }
@@ -41,16 +44,13 @@ public class ChangjoFirst: MonoBehaviour
     IEnumerator FirstEventCoroutine()
     {
         theOrder.PreLoadCharacter();
-       
-        npc3.SetActive(true);
-        npc4.SetActive(true);
-        npc5.SetActive(true);
         theOrder.NotMove(); //이벤트 시작시 이동불가
         
 
         theOrder.Turn("NPC3", "UP");
         theOrder.Turn("NPC4", "UP");
         theOrder.Turn("NPC5", "UP");
+
         theOrder.Move("Player", "UP");
         theOrder.Move("Player", "UP");
         theOrder.Move("Player", "UP");

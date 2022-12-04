@@ -34,6 +34,11 @@ public class TransferMap : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
     }
 
+    public void SelectMap(string _tranfer)
+    {
+        string mapName = _tranfer;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (door)
@@ -47,22 +52,22 @@ public class TransferMap : MonoBehaviour
                     {
                         case "UP":
                             if(vector.y == 1f)
-                                StartCoroutine(TranferCoroutine());
+                                StartCoroutine(TranferCoroutine(transferMapName));
                             break;
                         case "DOWN":
                             if (vector.y == -1f)
-                                StartCoroutine(TranferCoroutine());
+                                StartCoroutine(TranferCoroutine(transferMapName));
                             break;
                         case "RIGHT":
                             if (vector.x == 1f)
-                                StartCoroutine(TranferCoroutine());
+                                StartCoroutine(TranferCoroutine(transferMapName));
                             break;
                         case "LEFT":
                             if (vector.x == -1f)
-                                StartCoroutine(TranferCoroutine());
+                                StartCoroutine(TranferCoroutine(transferMapName));
                             break;
                         default:
-                            StartCoroutine(TranferCoroutine());
+                            StartCoroutine(TranferCoroutine(transferMapName));
                             break;
                     }   
                 }                
@@ -76,13 +81,13 @@ public class TransferMap : MonoBehaviour
         {
             if(collision.gameObject.name == "Player")
             {
-                StartCoroutine(TranferCoroutine());
+                StartCoroutine(TranferCoroutine(transferMapName));
             }
         }
     }
 
 
-    IEnumerator TranferCoroutine()
+    public IEnumerator TranferCoroutine(string _tranferMap)
     {
         theOrder.PreLoadCharacter();
         theOrder.NotMove();
@@ -111,8 +116,8 @@ public class TransferMap : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         theOrder.UnSetTransparent("player");
 
-        thePlayer.currentMapName = transferMapName;
-        SceneManager.LoadScene(transferMapName);
+        thePlayer.currentMapName = _tranferMap;
+        SceneManager.LoadScene(_tranferMap);
         theFade.FadeIn();
         theOrder.Move();
     }

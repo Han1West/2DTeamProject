@@ -22,10 +22,12 @@ public class PlayerManager : MovingObject
     public string walkSound_4;
 
     private AudioManger theAudio;
+    private SaveNLoad theSaveNLoad;
 
     private bool canMove = true;
 
     public bool notMove = false;
+    public bool rightTargetVector;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,7 @@ public class PlayerManager : MovingObject
         {
             DontDestroyOnLoad(this.gameObject); //다른 씬으로 넘어갈 때 파괴 X
             theAudio = FindObjectOfType<AudioManger>();
+            theSaveNLoad = FindObjectOfType<SaveNLoad>();
             boxCollider = GetComponent<BoxCollider2D>();
             animator = GetComponent<Animator>();
             instance = this;
@@ -128,7 +131,14 @@ public class PlayerManager : MovingObject
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.F5))
+        {
+            theSaveNLoad.CallSave();
+        }
+        if(Input.GetKeyDown(KeyCode.F5))
+        {
 
+        }
         if (canMove && !notMove)
         {
             // moving input and apply
@@ -139,6 +149,10 @@ public class PlayerManager : MovingObject
 
             }
         }
+        if (Input.GetAxisRaw("Horizontal") == 1)
+            rightTargetVector = true;
+        else if (Input.GetAxisRaw("Horizontal") == -1)
+            rightTargetVector = false;
     }
 
 }

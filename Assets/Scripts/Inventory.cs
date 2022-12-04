@@ -66,6 +66,16 @@ public class Inventory : MonoBehaviour
         slots = tf.GetComponentsInChildren<InventorySlot>();
     }
 
+    public List<Item> Saveitem()
+    {
+        return inventoryItemList;
+    }
+
+    public void LoadItem(List<Item> _itemList)
+    {
+        inventoryItemList = _itemList;
+    }
+
     public void GetAnItem(int _itemID, int _count = 1)
     {
         for(int i = 0; i < theDatabase.itemList.Count; i++) //데이터베이스아이템 검색

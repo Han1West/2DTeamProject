@@ -10,6 +10,8 @@ public class PlayerStat : MonoBehaviour
     public int currentHp;
 
     public int atk;
+    public int added_atk;
+
 
     public string dmgSound;
 

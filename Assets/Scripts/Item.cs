@@ -22,13 +22,16 @@ public class Item
         ETC
     }
 
-    public Item(int _itemID, string _itemName, string _itemDes, ItemType _itemType, int _itemCount = 1) //생성자로 사용(이 생성자를 이용해 값을 바로 채움)
+    public int atk;
+
+    public Item(int _itemID, string _itemName, string _itemDes, ItemType _itemType, int _atk = 0, int _itemCount = 1) //생성자로 사용(이 생성자를 이용해 값을 바로 채움)
     {
         itemID = _itemID;
         itemName = _itemName;
         itemDescription = _itemDes;
         itemType = _itemType;
         itemCount = _itemCount;
+        atk = _atk;
         itemIcon = Resources.Load("ItemIcon/" + _itemID.ToString(), typeof(Sprite)) as Sprite;
     }
 

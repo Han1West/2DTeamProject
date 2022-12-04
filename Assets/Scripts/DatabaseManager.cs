@@ -76,9 +76,9 @@ public class DatabaseManager : MonoBehaviour
     {
         theInv = FindObjectOfType<Inventory>();
         thePlayerStat = FindObjectOfType<PlayerStat>();
-        itemList.Add(new Item(10000, "묵직한 가방", "왠지 모르겠지만, 무거운 가방이다. 맞으면 꽤나 아플것 같다.", Item.ItemType.Equip));
-        itemList.Add(new Item(10001, "장난감 검", "겉보기엔 영락없는 검이지만, 장난감에 불가하다.", Item.ItemType.Equip));
-        itemList.Add(new Item(10002, "바인더", "모서리가 꽤나 날카로운 바인더이다.", Item.ItemType.Equip));
+        itemList.Add(new Item(10000, "묵직한 가방", "왠지 모르겠지만, 무거운 가방이다. 맞으면 꽤나 아플것 같다.", Item.ItemType.Equip,2));
+        itemList.Add(new Item(10001, "장난감 검", "겉보기엔 영락없는 검이지만, 장난감에 불가하다.", Item.ItemType.Equip,4));
+        itemList.Add(new Item(10002, "바인더", "모서리가 꽤나 날카로운 바인더이다.", Item.ItemType.Equip,6));
         itemList.Add(new Item(20003, "붕붕드링크", "우리가 만들어낸 폭탄드링크, 교수님께 드리자.", Item.ItemType.Equip));
         itemList.Add(new Item(20000, "피로회복제", "먹으면 약간의 체력을 회복할수 있는 회복제이다.", Item.ItemType.Use));
         itemList.Add(new Item(20001, "커피", "먹으면 체력을 회복할 수 있는 커피이다.", Item.ItemType.Use));

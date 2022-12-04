@@ -33,7 +33,7 @@ public class Test : MonoBehaviour
             //{
             //    theOrder.Move(move[i].name, move[i].direction);
             //}
-            theOrder.Turn("NPC1", "DOWN");
+            theOrder.Turn("NPC2", "DOWN");
         }
 
     }
