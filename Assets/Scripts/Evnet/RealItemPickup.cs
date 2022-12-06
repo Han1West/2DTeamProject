@@ -21,7 +21,7 @@ public class RealItemPickup : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (collision.gameObject.name == "Player")
         {
             StartCoroutine(DiaCoroutine());
             theOrder.Move();

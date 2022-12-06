@@ -12,6 +12,7 @@ public class FadeManager : MonoBehaviour
 
     public string flashSound;
 
+    private Menu theMenu;
     private AudioManger theAudio;
 
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f); //계산의 과부하 방지
@@ -19,6 +20,7 @@ public class FadeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        theMenu = FindObjectOfType<Menu>();
         theAudio = FindObjectOfType<AudioManger>();
     }
     public void FadeOut(float _speed = 0.02f)
@@ -54,7 +56,6 @@ public class FadeManager : MonoBehaviour
 
     IEnumerator GameOverCoroutine(float _speed)
     {
-
         color = over.color;
 
         while (color.a < 1f)
@@ -63,6 +64,17 @@ public class FadeManager : MonoBehaviour
             over.color = color;
             yield return waitTime;
         }
+
+        yield return new WaitForSeconds(2f);
+        
+        while (color.a > 0f)
+        {
+            color.a -= _speed;
+            over.color = color;
+            yield return waitTime;
+        }
+
+        theMenu.ToTitle();
     }
 
     IEnumerator FadeInCoroutine(float _speed)

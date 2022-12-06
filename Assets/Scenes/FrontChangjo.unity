@@ -911,7 +911,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 58b3570b012d9e7469b89688ef8fb5d3, type: 3}
   dialogue_22:
     sentences:
-    - "\uADF8\uB807\uB124\uC694. \uAC83\uBCF4\uB2E4 \uC774 \uCABD.."
+    - "\uADF8\uB807\uB124\uC694. \uAC83\uBCF4\uB2E4 \uC774 \uCABD\uC9C0.."
     sentences2: []
     dialougueWindows:
     - {fileID: 21300000, guid: 68716520f44befd4685ef892ce0bf928, type: 3}

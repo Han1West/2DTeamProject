@@ -78,6 +78,7 @@ public class FrontChangjo : MonoBehaviour
 
         theOrder.NotMove(); //이벤트 시작시 이동불가
 
+
         theOrder.Turn("NPC3", "RIGHT");
         yield return new WaitForSeconds(0.5f);
         theOrder.Turn("NPC3", "LEFT");
@@ -85,9 +86,15 @@ public class FrontChangjo : MonoBehaviour
         theOrder.Turn("NPC3", "RIGHT");
         yield return new WaitForSeconds(0.5f);
 
+
         theDM.ShowDialogue(dialogue_01);
         yield return new WaitUntil(() => !theDM.talking);
-
+        theOrder.Turn("NPC4", "DOWN");
+        yield return new WaitForSeconds(0.1f);
+        theOrder.Turn("NPC5", "DOWN");
+        yield return new WaitForSeconds(0.1f);
+        theOrder.Turn("Player", "DOWN");
+        yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_02);
         yield return new WaitUntil(() => !theDM.talking);
 
@@ -135,8 +142,13 @@ public class FrontChangjo : MonoBehaviour
 
         theOrder.NotMove(); //이벤트 시작시 이동불가
 
+
         theDM.ShowDialogue(dialogue_21);
         yield return new WaitUntil(() => !theDM.talking);
+        theOrder.Turn("NPC3", "DOWN");
+        theOrder.Turn("NPC4", "DOWN");
+        theOrder.Turn("NPC5", "DOWN");
+        theOrder.Turn("Player", "DOWN");
 
         theDM.ShowDialogue(dialogue_22);
         yield return new WaitUntil(() => !theDM.talking);

@@ -143,7 +143,7 @@ public class SaveNLoad : MonoBehaviour
             theInven.LoadItem(itemList);
 
             StartCoroutine(WaitCoroutine());
-
+            theFade.FadeIn();
         }
         else
         {

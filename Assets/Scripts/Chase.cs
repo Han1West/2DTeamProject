@@ -40,7 +40,7 @@ public class Chase : MonoBehaviour
     private void FixedUpdate()
     {
         if (groundFirst.mon)
-            MoveCharacter(movement);
+             MoveCharacter(movement);
     }
     private void MoveCharacter(Vector2 direction)
     {

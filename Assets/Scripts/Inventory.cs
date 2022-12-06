@@ -64,6 +64,7 @@ public class Inventory : MonoBehaviour
         inventoryItemList = new List<Item>();
         inventoryTabList = new List<Item>();
         slots = tf.GetComponentsInChildren<InventorySlot>();
+        inventoryItemList.Add(new Item(20000, "피로회복제", "먹으면 약간의 체력을 회복할수 있는 회복제이다.", Item.ItemType.Use));
     }
 
     public List<Item> Saveitem()

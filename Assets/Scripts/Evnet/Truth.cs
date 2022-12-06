@@ -115,15 +115,22 @@ public class Truth : MonoBehaviour
         npc4.SetActive(true);
         npc5.SetActive(true);
         PlayerNPC.SetActive(true);
-
-        theOrder.Turn("NPC3", "DOWN");
-        theOrder.Turn("NPC4", "DOWN");
-        theOrder.Turn("NPC5", "DOWN");
-        theOrder.Turn("PlayerNPC", "UP");
         
 
         theDM.ShowDialogue(dialogue_11);
         yield return new WaitUntil(() => !theDM.talking);
+
+        theOrder.Turn("NPC31", "DOWN");
+        yield return new WaitForSeconds(0.1f);
+
+        theOrder.Turn("NPC41", "DOWN");
+        yield return new WaitForSeconds(0.1f);
+
+        theOrder.Turn("NPC51", "DOWN");
+        yield return new WaitForSeconds(0.1f);
+
+        theOrder.Turn("PlayerNPC", "UP");
+        yield return new WaitForSeconds(0.1f);
 
         theDM.ShowDialogue(dialogue_22);
         yield return new WaitUntil(() => !theDM.talking);

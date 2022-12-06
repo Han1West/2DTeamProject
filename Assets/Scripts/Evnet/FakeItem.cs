@@ -19,7 +19,7 @@ public class FakeItem : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKey(KeyCode.Z))
         {
             StartCoroutine(DiaCoroutine());
             theOrder.Move();

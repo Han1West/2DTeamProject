@@ -76,14 +76,12 @@ public class AfterFight : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
         theOrder.Turn("NPC4", "RIGHT");
 
-        theOrder.Move("NPC5", "RIGHT");
         theDM.ShowDialogue(dialogue_4);
         yield return new WaitUntil(() => !theDM.talking);
 
         theDM.ShowDialogue(dialogue_5);
         yield return new WaitUntil(() => !theDM.talking);
 
-        theOrder.Move("NPC4", "RIGHT");
         theDM.ShowDialogue(dialogue_6);
         yield return new WaitUntil(() => !theDM.talking);
  

@@ -234,7 +234,7 @@ MonoBehaviour:
       \uC801\uC6A9\uB418\uB294 \uB4EF\uD558\uB2E4. \r\n... \uC9C4\uC815\uD55C \uB098\uB9CC\uC758
       \uC138\uC0C1\uC774 \uC644\uC131\uB418\uB294 \uAC70\uC57C."
     dialougueWindows:
-    - {fileID: 21300000, guid: 269e60c05b80c0a4dad51db33e390964, type: 3}
+    - {fileID: 21300000, guid: 561f196f368164c4b9e14f7275d78c63, type: 3}
   dialogue_5:
     sentences: []
     sentences2:
@@ -312,7 +312,7 @@ MonoBehaviour:
     sentences:
     - "- \uC870\uC0AC \uACB0\uACFC, \uC6B0\uB9AC\uAC00 \uBC1C\uACAC\uD55C \uC77C\uC9C0\uBFD0
       \uC544\uB2C8\uB77C \uC5F0\uAD6C\uBCF4\uACE0\uC11C\uB4E4\uB3C4 \uBC1D\uD600\uC9C0\uBA70,
-      \uB354 \uC790\uC138\uD55C \uC815\t\uBCF4\uB4E4\uC774 \uB098\uC624\uAE30 \uC2DC\uC791\uD588\uB2E4."
+      \uB354 \uC790\uC138\uD55C \uC815\uBCF4\uB4E4\uC774 \uB098\uC624\uAE30 \uC2DC\uC791\uD588\uB2E4."
     sentences2: []
     dialougueWindows:
     - {fileID: 21300000, guid: 561f196f368164c4b9e14f7275d78c63, type: 3}
@@ -480,6 +480,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1566334649079157664, guid: 002b09b16c5149d46a31649aa3800aa6, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1814727293}
+    - target: {fileID: 1566334649079157664, guid: 002b09b16c5149d46a31649aa3800aa6, type: 3}
+      propertyPath: characterName
+      value: NPC41
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 002b09b16c5149d46a31649aa3800aa6, type: 3}
 --- !u!1 &323679917 stripped
@@ -617,6 +625,14 @@ PrefabInstance:
     - target: {fileID: 2494494734054329725, guid: 1c2ba43c17c9e544ebb2c715fa17fa77, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362303537891875881, guid: 1c2ba43c17c9e544ebb2c715fa17fa77, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1011568486}
+    - target: {fileID: 8362303537891875881, guid: 1c2ba43c17c9e544ebb2c715fa17fa77, type: 3}
+      propertyPath: characterName
+      value: NPC31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c2ba43c17c9e544ebb2c715fa17fa77, type: 3}
@@ -774,6 +790,11 @@ PrefabInstance:
 --- !u!1 &1011568485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2494494734054329725, guid: 1c2ba43c17c9e544ebb2c715fa17fa77, type: 3}
+  m_PrefabInstance: {fileID: 1011568484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1011568486 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6305750931650025045, guid: 1c2ba43c17c9e544ebb2c715fa17fa77, type: 3}
   m_PrefabInstance: {fileID: 1011568484}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1105403312
@@ -4408,6 +4429,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1463505117903599149, guid: 002b09b16c5149d46a31649aa3800aa6, type: 3}
   m_PrefabInstance: {fileID: 1814727291}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1814727293 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6289106744837304326, guid: 002b09b16c5149d46a31649aa3800aa6, type: 3}
+  m_PrefabInstance: {fileID: 1814727291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1935824944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4466,6 +4492,10 @@ PrefabInstance:
     - target: {fileID: 2023725071515295259, guid: 22e9a30bc185ffb47909167b70fd8930, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852018587727432708, guid: 22e9a30bc185ffb47909167b70fd8930, type: 3}
+      propertyPath: characterName
+      value: NPC51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22e9a30bc185ffb47909167b70fd8930, type: 3}
@@ -9527,7 +9557,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 581.54285, y: 340.8653}
+  m_Offset: {x: 1097.4358, y: 525.9138}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9538,7 +9568,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2505.595, y: 1680.93}
+  m_Size: {x: 3537.3809, y: 2051.027}
   m_EdgeRadius: 0
 --- !u!114 &2105403432
 MonoBehaviour:
